@@ -1,16 +1,24 @@
-#rotate, #skew, #all, #animate{
-  border: 2px solid #000;
-  width: 200px;
-  height: 200px;
-  display: block;
-  margin: 10px;
-}
-
-h3{
-  border-bottom: 1px solid #000;
-  text-align: center;
-}
-
 #rotate{
-  -webkit-transform: rotateZ(50deg);
+  transform: rotate(10deg);
+}
+
+#skew{
+  transform: skew(10deg);
+}
+
+#all{
+  transform: skew(20deg) rotate(30deg);
+}
+
+@keyframes animate{
+  from(background-color: blue;)
+  to(background-color: pink;)
+}
+
+#animate{
+  width:100px;
+  height:100px;
+  background-color:blue;
+  animation-name: animate;
+  animation-duration: 1s
 }
